@@ -1,0 +1,245 @@
+
+/* HOME SCREEN */
+
+.homescreen-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #000;
+}
+
+.app-logo {
+    width: 40vw;
+    height: auto;
+}
+
+.go-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 5vh;
+    right: calc(50vw - 25px);
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.23s;
+    z-index: 999;
+    background-color: lightslategray;
+  }
+
+.go-btn:hover {
+    /* transform: scale(1.13) rotate(360deg); */
+    transform: scale(1.13);
+    background-color: aqua;
+}
+
+  /* ACTIVE COLOR #7dddf4 */
+
+/*   !!! all screens are in dark theme by defaultf !!!   */
+
+/* LOGIN SCREEN */
+
+.loginscreen-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1.12s;
+    color: white;
+    background-color: #000;
+}
+
+#uname,#psswd {
+	position: relative;
+	width: 70%;
+	height: 40px;
+	border: none;
+	border-radius: 25px;
+	opacity: 0.5;
+	background: #ede4e4;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#signin {
+    position: fixed;
+    bottom: 5vh;
+    right: calc(60% / 2);
+	text-transform: uppercase;
+	width: 40%;
+	height: 30px;
+	border-radius: 20px;
+    color: white;
+	background-color: rgb(121, 145, 117);
+	border: none;
+	font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* CALCULATION SCREENS */
+
+.calculationscreen-wrapper {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 1rem 0;
+    padding-top: 2.4rem;
+    overflow-x: hidden;
+    transition: 1.12s;
+    /* color: white;
+    background-color: #000; */
+}
+
+/* ESTIMATION SCREEN */
+
+.estimationscreen-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 0;
+    transition: 1.12s;
+    color: #000;
+    /* color: #000;
+    background-color: #000; */
+}
+
+.estimationcard-container {
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+    margin: .4rem auto;
+}
+
+.estimation-card {
+    display: block;
+    margin: .6rem auto;
+    padding: 1rem 8px;
+    width: 90%;
+    border-radius: 20px;
+    color: white;
+    background-color: #2c3034ba;
+}
+
+.bill-title {
+    margin: .8rem 0;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+.targetbill-input {
+    border: none;
+    outline: none;
+    /* background-color: transparent; */
+    display: inline-block;
+    width: 40%;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-align: center;
+    padding: .6rem 0;
+    border-radius: 8px;
+}
+
+
+.optimize-btn {
+    border: 2px solid yellowgreen;
+    padding: .5rem .8rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: black;
+    background-color: chartreuse;
+}
+
+
+/* OPTIMIZATION SCREEN */
+
+.optimizationscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 0;
+    transition: 1.12s;
+    color: white;
+    /* color: white;
+    background-color: #000; */
+}
+
+.targetbillinfo-subwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: .6rem auto;
+    padding: 1rem 12px;
+}
+
+
+.resultbill-info {
+    margin: .6rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL STYLESHEET */
+
+.title-level-4 {
+    color: grey;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.visibleflex {
+    display: flex!important;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    padding: 0;
+}
+
+
+/* STANDALONE ELEMENTS */
+
+.calculatebill-btn {
+    padding: 6px 12px;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid blue;
+    background-color: aqua;    
+}
+
+.calculatebill-btn:active {
+    background-color: black;
+    color: cyan;
+}

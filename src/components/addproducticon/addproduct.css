@@ -1,0 +1,105 @@
+/* ADDpRODUCTcOMP stylesheet */
+
+.addproduct-wrapper {
+    display: block;
+    margin: 1rem auto;
+    padding: 4px 0;
+}
+
+.addproduct {
+    width: 2rem;
+    height: auto;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+.addproduct:active { background-color: yellowgreen; }
+
+.productlist-wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;
+    height: 60vh;
+    margin: 0.8rem auto;
+    border-radius: 8px;
+    color: black;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.productlist-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2rem;
+    padding: 3px 8px;
+    background-color: #393c3f;
+}
+
+.productlist {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    background-color: #679191;
+    overflow-y: scroll;
+}
+
+.product-item {
+    width: 100%;
+    margin: 10px auto;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid #827e8d;
+    transition: 0.1s;
+}
+
+.product-item:hover, .product-item:active { background-color: aqua; }
+
+.productmenu-icon {
+    width: 2.8rem;
+    padding-top: 5px;
+    height: auto;
+}
+
+.productmenu-item-name {
+    display: block;
+    margin: 1rem auto;
+}
+
+.productlist-bottombar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 3px 0;
+    background-color: #393c3f;
+}
+
+.productmenu-cancel, .productmenu-ok {
+    /* border: 1px solid white; */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 1px 3px;
+    padding: 2px 8px;
+    color: white;
+    text-transform: lowercase;
+    background-color: darkcyan;
+}
+
+.productmenu-cancel { background-color: red; }
+
+
+/* UX */
+
+.animated-popup {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .productlist { grid-template-columns: auto auto auto auto; }
+    .productmenu-icon { width: 5rem; }
+}
