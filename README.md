@@ -1,4 +1,4 @@
-# SaveBill - tool to analyze and optimize your electricity usage
+# Ebimo - A tool to analyze and optimize your electricity usage
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
